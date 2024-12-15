@@ -61,6 +61,8 @@ corgi.onResized(async () => {
 
 corgi.onClose(async () => {
   say(`Luv u Corgi!`);
-  // You can also forcefully exit a process early, otherwise it will wait for all widgets/prompts to close
-  // process.exit(0);
+  // Overrideing "onClose" will prevent the script from exiting when the widget closes
+  // You'll have to exit the script manually or else it will hang open in the background
+  // (You can still access it from the main menu, then type "p", then "space" to access the process manager)
+  exit();
 });
