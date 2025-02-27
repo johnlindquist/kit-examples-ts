@@ -23,7 +23,9 @@ await revealFile(outputFile);
 await hide();
 await playAudioFile(outputFile);
 
-// Or use a div to play the audio
-// await div({
-//   html: `<audio src="file://${outputFile}" controls/>`,
-// });
+// Or use a div with an audio element to play the audio
+/*
+await div({
+  html: `<audio src="file://${outputFile}" controls/>`,
+});
+*/
